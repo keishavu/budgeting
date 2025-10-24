@@ -1,12 +1,14 @@
 public class Transaction {
-    double amount;
-    TransactionType type;
-    TransactionCategory category;
+    private double amount;
+    private TransactionType type;
+    private TransactionCategory category;
+    private String user; 
     //constructor
-    public Transaction(double newAmount, TransactionType newType, TransactionCategory newCategory){
+    public Transaction(double newAmount, TransactionType newType, TransactionCategory newCategory, User newUser){
         this.amount = newAmount;
         this.type = newType;
         this.category = newCategory;
+        this.user = newUser;
     }
     //getters and setters
     public double getAmount(){
