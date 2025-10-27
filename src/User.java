@@ -53,12 +53,13 @@ public class User{
         budgets.add(b);
     }
 
-    public void checkBudgetsStatus() {
+    public boolean overUnderBudget() {
         for (Budget b : budgets) {
             if (b.isOverBudget()) {
-                System.out.println("⚠️ Over budget in " + b.getCategory() + "!");
+                return true;
             }
         }
+        return false;
     }
 }
 }

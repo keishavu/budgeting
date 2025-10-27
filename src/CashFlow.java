@@ -14,7 +14,7 @@ public class CashFlow {
         if (t.getType() == TransactionType.INCOME){
             totalIncome += t.getAmount();
         } else if (t.getType() == TransactionType.EXPENSE){
-            totalExpenses -= t.getAmount();
+            totalExpenses += t.getAmount();
         }
     }
     public double getTotalIncome(){
